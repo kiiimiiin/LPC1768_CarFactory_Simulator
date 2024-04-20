@@ -1,0 +1,126 @@
+<html>
+<body>
+<pre>
+<h1>킮ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.13.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Kim MinKI, Seoultech, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.13.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.13.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.11.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\armlab\term_project\term_project.uvprojx
+Project File Date:  11/25/2023
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+compiling term_project.c...
+term_project.c(60): warning:  #68-D: integer conversion resulted in a change of sign
+  char tim0_front =-1, tim1_front = -1, tim2_front = -1, tim3_front = -1;  // 구조체배열에서 가장 최근에 들어온 원소를 가리키는 인덱스
+term_project.c(60): warning:  #68-D: integer conversion resulted in a change of sign
+  char tim0_front =-1, tim1_front = -1, tim2_front = -1, tim3_front = -1;  // 구조체배열에서 가장 최근에 들어온 원소를 가리키는 인덱스
+term_project.c(60): warning:  #68-D: integer conversion resulted in a change of sign
+  char tim0_front =-1, tim1_front = -1, tim2_front = -1, tim3_front = -1;  // 구조체배열에서 가장 최근에 들어온 원소를 가리키는 인덱스
+term_project.c(60): warning:  #68-D: integer conversion resulted in a change of sign
+  char tim0_front =-1, tim1_front = -1, tim2_front = -1, tim3_front = -1;  // 구조체배열에서 가장 최근에 들어온 원소를 가리키는 인덱스
+term_project.c(107): warning:  #1295-D: Deprecated declaration UART0_Init_ByFunc - give arg types
+  void UART0_Init_ByFunc();
+term_project.c(108): warning:  #1295-D: Deprecated declaration UART1_Init_ByReg - give arg types
+  void UART1_Init_ByReg();
+term_project.c(109): warning:  #1295-D: Deprecated declaration TIMER0_Init_ByReg - give arg types
+  void TIMER0_Init_ByReg();
+term_project.c(111): warning:  #1295-D: Deprecated declaration TIMER1_Init_ByFunc - give arg types
+  void TIMER1_Init_ByFunc();
+term_project.c(113): warning:  #1295-D: Deprecated declaration TIMER2_Init_ByReg - give arg types
+  void TIMER2_Init_ByReg();
+term_project.c(115): warning:  #1295-D: Deprecated declaration TIMER3_Init_ByFunc - give arg types
+  void TIMER3_Init_ByFunc();
+term_project.c(117): warning:  #1295-D: Deprecated declaration setInterruptPriorities - give arg types
+  void setInterruptPriorities();
+term_project.c(1265): warning:  #1-D: last line of file ends without a newline
+  }
+term_project.c: 12 warnings, 0 errors
+compiling debug_frmwrk.c...
+compiling lpc17xx_clkpwr.c...
+compiling lpc17xx_pinsel.c...
+compiling lpc17xx_uart.c...
+compiling lpc17xx_timer.c...
+compiling LED_MCB1700.c...
+compiling GPIO_LPC17xx.c...
+compiling PIN_LPC17xx.c...
+assembling startup_LPC17xx.s...
+compiling system_LPC17xx.c...
+linking...
+Program Size: Code=13964 RO-data=1364 RW-data=116 ZI-data=1364  
+".\Objects\term_project.axf" - 0 Error(s), 12 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.LPC1700_DFP.2.0.0.pack
+                Keil::Device:PIN:1.00
+                NXP LPC1700 Series Device Support, Drivers and Examples for MCB1700
+   * Component: PIN Version: 1.00
+   * Component: GPIO Version: 1.00
+   * Component: LED Version: 1.0.0
+   * Component: Startup Version: 1.0.0
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.MDK-Middleware.6.2.0.pack
+                ::Board Support:LED:1.00 (API)
+                Keil MDK-ARM Professional Middleware for ARM Cortex-M based devices
+   * Component: LED Version: 1.00
+
+<h2>Collection of Component include folders:</h2>
+  C:\armlab\term_project\RTE
+  C:\armlab\term_project\RTE\Device\LPC1768
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\LPC1700_DFP\2.0.0\Device\Include
+  C:\Keil_v5\ARM\PACK\Keil\LPC1700_DFP\2.0.0\RTE_Driver
+  C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\6.2.0\Board
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Keil::Device:PIN:1.00
+      Source file:   RTE_Driver\PIN_LPC17xx.c
+      Include file:  RTE_Driver\PIN_LPC17xx.h
+
+   * Component: Keil::Device:GPIO:1.00
+      Source file:   RTE_Driver\GPIO_LPC17xx.c
+      Include file:  RTE_Driver\GPIO_LPC17xx.h
+
+   * Component: Keil.MCB1700::Board Support:LED:1.0.0
+      Source file:   Boards\Keil\MCB1700\Common\LED_MCB1700.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\startup_LPC17xx.s
+      Source file:   Device\Source\system_LPC17xx.c
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Include file:  Device\Include\LPC17xx.h
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: ::Board Support:LED:1.00 (API)
+      Include file:  Board\Board_LED.h
+</pre>
+</body>
+</html>
